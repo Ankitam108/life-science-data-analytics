@@ -1,4 +1,4 @@
--- TABLE 1: PATIENTS
+-- TABLE 1: PATIENTS 
 CREATE TABLE patients
 ( patient_id INT PRIMARY KEY,
   name VARCHAR(50),
