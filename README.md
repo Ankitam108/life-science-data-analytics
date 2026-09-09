@@ -41,8 +41,8 @@ The project covers SQL concepts from beginner to advanced level:
 - Window functions
 - Views
 - CTAS (CREATE TABLE AS SELECT)
-- Indexing concepts
-- Table Partitioning
+- Search Optimization (Snowflake alternative to traditional indexings
+- Micro-Partitioning & Clustering
 - Stored Procedures and Functions
 - Triggers
 - Healthcare and Genomics data analysis
@@ -67,8 +67,8 @@ The project covers SQL concepts from beginner to advanced level:
 | `14_window_functions.sql` | Ranking, LAG, LEAD, Running Totals |
 | `15_views.sql` | CREATE VIEW, Querying Views |
 | `16_ctas.sql` | CREATE TABLE AS SELECT |
-| `17_indexing.sql` | Indexing Concepts |
-| `18_table_partitioning.sql` | Table Partitioning |
+| `17_indexing.sql` | Search Optimization Concepts |
+| `18_table_partitioning.sql` | Micro-Partitioning & Clustering |
 | `19_stored_procedures_functions.sql` | Stored Procedures and Functions |
 | `20_triggers.sql` | Triggers |
 | `21_gene_analysis.sql` | Gene Variant and Genomics Analysis |
