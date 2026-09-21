@@ -1,24 +1,45 @@
 -- Q1. Basic WHERE: Find patients from Chandigarh
-SELECT *
+SELECT 
+  name,
+  age,
+  gender,
+  city,
+  disease
 FROM patients
-WHERE city = 'chandigarh';
+WHERE 
+  city = 'chandigarh';
 
 -- Q2. WHERE + comparison operator: Find patients older than 35
-SELECT *
+SELECT 
+  name,
+  age,
+  gender,
+  city,
+  disease
 FROM patients
-WHERE age > 35;
+WHERE 
+  age > 35;
 
 -- Q3. COUNT + GROUP BY: Count patients for each disease
-SELECT disease, COUNT(*) AS patient_count
+SELECT 
+  disease,
+  COUNT(*) AS patient_count
 FROM patients
-GROUP BY disease;
+GROUP BY
+  disease;
 
 -- Q4. AVG + GROUP BY: Find average age for each disease
-SELECT disease, AVG(age) AS average_count
+SELECT 
+  disease, 
+  AVG(age) AS average_count
 FROM patients
-GROUP BY disease;
+GROUP BY 
+  disease;
 
 -- Q5. MAX + GROUP BY: Find the oldest patient in each city
-SELECT city, MAX(age) AS max_age
+SELECT 
+  city,
+  MAX(age) AS max_age
 FROM patients
-GROUP BY city;
+GROUP BY
+  city;
