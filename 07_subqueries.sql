@@ -4,7 +4,7 @@
 SELECT 
  name patients
 FROM patients
-WHERE 
+WHERE  
  patient_id 
  IN
 (
