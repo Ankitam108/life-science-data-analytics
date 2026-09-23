@@ -105,6 +105,4 @@ The project explores gene test results, detected variants, chromosomes, diseases
 
 ## Project Status
 
-🚧 Currently in development.
-
 The project is being expanded progressively from basic SQL queries to advanced SQL, database concepts, and final healthcare analytics.
