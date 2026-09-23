@@ -43,12 +43,16 @@ ON TABLE patients;
 CREATE TASK patient_audit_task
 WAREHOUSE = COMPUTE_WH
 SCHEDULE = '1 HOUR'
+  
 AS
+
 INSERT INTO patient_audit
+  
 SELECT patient_id,
        name, 
        METADATA$ACTION,
        CURRENT_TIMESTAMP()
+  
 FROM patient_stream
 WHERE METADATA$ACTION ='INSERT'; 
 
