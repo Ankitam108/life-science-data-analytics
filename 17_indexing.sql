@@ -1,4 +1,4 @@
-- Q1. SEARCH OPTIMIZATION: Add search optimization to
+-- Q1. SEARCH OPTIMIZATION: Add search optimization to
 --     the patients table to improve searches on the
 --     patient name column.
 SELECT * FROM patients;
@@ -32,6 +32,7 @@ WHERE city = 'gurugram';
 --     query execution plan for a query that filters
 --     patients by city.
 EXPLAIN
+  
 SELECT name, city
 FROM patients
 WHERE city = 'gurugram';
