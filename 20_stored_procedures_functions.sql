@@ -1,7 +1,8 @@
 -- Q1. SQL FUNCTION: Create a function that accepts a
 --     patient's age and returns whether the patient is
 --     an adult or minor.
-CREATE OR REPLACE FUNCTION patients_age (age NUMBER)
+CREATE OR REPLACE FUNCTION 
+  patients_age (age NUMBER)
 RETURNS VARCHAR
 LANGUAGE SQL
 AS
@@ -21,7 +22,8 @@ FROM patients;
 -- Q2. SQL FUNCTION: Create a function that accepts a
 --     patient's age and returns the patient's age group:
 --     'Young', 'Middle-aged', or 'Senior'.
-CREATE OR REPLACE FUNCTION patient_age_detail(age NUMBER)
+CREATE OR REPLACE FUNCTION 
+  patient_age_detail(age NUMBER)
 RETURNS VARCHAR
 LANGUAGE SQL
 AS
@@ -42,7 +44,8 @@ FROM patients;
 -- Q3. SQL FUNCTION: Create a function that accepts a
 --     disease name and returns the number of patients
 --     having that disease.
-CREATE FUNCTION disease_name(disease_name VARCHAR)
+CREATE FUNCTION 
+  disease_name(disease_name VARCHAR)
 RETURNS NUMBER
 LANGUAGE SQL 
 AS
@@ -58,7 +61,8 @@ SELECT disease_name ('asthma');
 
 -- Q4. STORED PROCEDURE: Create a stored procedure that
 --     displays all patients belonging to a given city.
-CREATE OR REPLACE PROCEDURE patient_city(city_name VARCHAR)
+CREATE OR REPLACE PROCEDURE 
+  patient_city(city_name VARCHAR)
 RETURNS TABLE (
     patient_id NUMBER,
     name VARCHAR
@@ -89,13 +93,15 @@ CALL patient_city('gurugram');
 -- Q5. STORED PROCEDURE: Create a stored procedure that
 --     inserts a new patient record into the patients table.
 
-CREATE OR REPLACE PROCEDURE new_patients (p_patient_id NUMBER,
-                                          p_name VARCHAR,
-                                          p_age NUMBER,
-                                          p_gender VARCHAR,
-                                          p_blood_group VARCHAR,
-                                          p_city VARCHAR,
-                                          p_disease VARCHAR)
+CREATE OR REPLACE PROCEDURE 
+  new_patients 
+         (p_patient_id NUMBER,
+          p_name VARCHAR,
+          p_age NUMBER,
+          p_gender VARCHAR,
+          p_blood_group VARCHAR,
+          p_city VARCHAR,
+          p_disease VARCHAR)
 RETURNS VARCHAR
 LANGUAGE SQL
 AS
