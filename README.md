@@ -2,9 +2,13 @@
 
 ## About
 
-A comprehensive SQL portfolio project combining **Healthcare Analytics with Genomics/Gene Variant Tracking**. The project demonstrates SQL skills ranging from fundamentals to advanced database and analytical concepts, using **Snowflake**.
+A comprehensive SQL project combining **Healthcare Analytics with Genomics and Gene Variant Tracking** using **Snowflake**.
 
-The project combines healthcare data such as patients, doctors, appointments, laboratory tests, medicines, and prescriptions with genomic data for gene variant analysis.
+The project uses a healthcare dataset containing patients, doctors, appointments, laboratory tests, medicines, prescriptions, and genomic testing data.
+
+It covers SQL concepts from fundamentals to advanced analytical techniques and Snowflake-specific database concepts, while also applying **Life Science and Human Genetics domain knowledge** to healthcare and genomic data.
+
+---
 
 ## Database Structure
 
@@ -14,44 +18,61 @@ The project combines healthcare data such as patients, doctors, appointments, la
 ### Tables
 
 - `patients` — Patient demographic and disease information
-- `doctors` — Specialist doctor information
-- `appointments` — Patient-doctor appointments
-- `lab_tests` — Diagnostic laboratory test results
+- `doctors` — Doctor and specialist information
+- `appointments` — Patient-doctor appointment records
+- `lab_tests` — Diagnostic laboratory test information
 - `medicines` — Medicine inventory and pricing
 - `prescriptions` — Medicines prescribed to patients
-- `gene_tests` — Gene testing and gene variant tracking
+- `gene_tests` — Gene testing and gene variant information
+
+---
 
 ## SQL Topics Covered
 
-The project covers SQL concepts from beginner to advanced level:
+The project covers **22 SQL and Snowflake topics**, progressing from fundamental SQL to advanced analytical and database concepts.
 
-- SELECT and basic queries
-- Filtering and operators
-- Aggregate functions
+### SQL Fundamentals
+
+- SELECT and Basic Queries
+- Filtering and Operators
+- Aggregate Functions
 - Basic Joins
 - Advanced Joins
 - GROUP BY and HAVING
 - Subqueries
-- CTEs
+- Common Table Expressions (CTEs)
 - Recursive CTEs
-- CASE statements
-- NULL handling and NULL functions
-- Date and Time functions
-- String functions
-- Window functions
+- CASE Expressions
+- NULL Handling and NULL Functions
+
+### Advanced SQL & Analytics
+
+- Date and Time Functions
+- String Functions
+- Window Functions
 - Views
 - CTAS (CREATE TABLE AS SELECT)
-- Search Optimization (Snowflake alternative to traditional indexings
-- Micro-Partitioning & Clustering
+
+### Snowflake Database Concepts
+
+- Search Optimization
+- Micro-Partitioning and Clustering
+- Trigger Concepts and Snowflake Alternatives
 - Stored Procedures and Functions
-- Triggers
-- Healthcare and Genomics data analysis
+
+### Data Analysis
+
+- Healthcare Data Analysis
+- Genomics and Gene Variant Analysis
+- End-to-End Healthcare Analysis
+
+---
 
 ## SQL Files
 
 | File | Topics Covered |
 |---|---|
-| `01_database_setup.sql` | Tables + Data |
+| `01_database_setup.sql` | Tables and Data |
 | `02_aggregate_functions.sql` | COUNT, AVG, MAX, SUM, MIN |
 | `03_filtering.sql` | WHERE, AND, OR, IN, BETWEEN, LIKE |
 | `04_joins_basic.sql` | INNER, LEFT, RIGHT, FULL JOIN |
@@ -68,41 +89,106 @@ The project covers SQL concepts from beginner to advanced level:
 | `15_views.sql` | CREATE VIEW, Querying Views |
 | `16_ctas.sql` | CREATE TABLE AS SELECT |
 | `17_indexing.sql` | Search Optimization Concepts |
-| `18_table_partitioning.sql` | Micro-Partitioning & Clustering |
-| `19_stored_procedures_functions.sql` | Stored Procedures and Functions |
-| `20_triggers.sql` | Triggers |
+| `18_table_partitioning.sql` | Micro-Partitioning and Clustering |
+| `19__triggers.sql` | Trigger Concepts and Snowflake Alternatives |
+| `20_stored_procedures_functions.sql` | Stored Procedures and Functions |
 | `21_gene_analysis.sql` | Gene Variant and Genomics Analysis |
 | `22_final_healthcare_analysis.sql` | End-to-End Healthcare Data Analysis |
 
-## Unique Feature
+---
 
-### Genomics & Gene Variant Analysis
+## Genomics & Gene Variant Analysis
 
-A key feature of this project is the `gene_tests` table, which combines SQL with **Life Science and Human Genetics domain knowledge**.
+A key feature of this project is the integration of **genomics data with healthcare analytics**.
 
-The analysis includes genes such as:
+The `gene_tests` table contains genetic testing information and includes genes such as:
 
-- Galectin-3
-- BRCA1
-- TP53
-- EGFR
+- **Galectin-3**
+- **BRCA1**
+- **TP53**
+- **EGFR**
 
-The project explores gene test results, detected variants, chromosomes, diseases, and patient-level genomic information.
+The analysis explores:
 
-## Project Goals
+- Gene testing patterns
+- Gene test results
+- Detected variants
+- Patient-level genomic information
+- Gene and disease relationships
+- Variant/result distribution
+- Genomics-based aggregations
 
-- Demonstrate practical SQL skills
-- Practice SQL using a realistic healthcare dataset
-- Apply advanced SQL concepts to real-world analytical questions
-- Combine SQL with Life Science and Genomics domain knowledge
-- Build a portfolio project for Data Analyst / Analytics roles
+This demonstrates the application of SQL to **Life Science and Human Genetics data**.
+
+---
+
+## Snowflake Concepts
+
+The project also covers Snowflake-specific concepts, including:
+
+- **Search Optimization** as an alternative to traditional database indexing
+- **Micro-partitions**
+- **Clustering**
+- `SYSTEM$CLUSTERING_INFORMATION`
+- **Stored Procedures**
+- **User-defined Functions**
+- **Streams and Tasks**
+- Snowflake SQL syntax and analytical functions
+
+For trigger-related functionality, the project explores Snowflake's approach using **Streams and Tasks** rather than traditional DML triggers.
+
+---
+
+## Healthcare Analysis
+
+The final analysis combines multiple healthcare tables to perform practical analysis involving:
+
+- Patient demographics
+- Disease distribution
+- Doctor and appointment activity
+- Laboratory testing
+- Prescription information
+- Patient healthcare activity
+- Date-based trends
+- Genomic testing
+
+The project progresses from individual SQL concepts to **multi-table healthcare analysis**.
+
+---
 
 ## Technologies
 
 - **Snowflake**
 - **SQL**
+- **Git**
 - **GitHub**
 
-## Project Status
+---
 
-The project is being expanded progressively from basic SQL queries to advanced SQL, database concepts, and final healthcare analytics.
+## Project Structure
+
+```text
+Life Science Data Analytics — SQL Project
+│
+├── 01_database_setup.sql
+├── 02_aggregate_functions.sql
+├── 03_filtering.sql
+├── 04_joins_basic.sql
+├── 05_joins_advanced.sql
+├── 06_group_by_having.sql
+├── 07_subqueries.sql
+├── 08_cte.sql
+├── 09_recursive_cte.sql
+├── 10_case_statements.sql
+├── 11_null_functions.sql
+├── 12_date_time_functions.sql
+├── 13_string_functions.sql
+├── 14_window_functions.sql
+├── 15_views.sql
+├── 16_ctas.sql
+├── 17_indexing.sql
+├── 18_table_partitioning.sql
+├── 19_triggers.sql
+├── 20_stored_procedures_functions.sql
+├── 21_gene_analysis.sql
+└── 22_final_healthcare_analysis.sql
