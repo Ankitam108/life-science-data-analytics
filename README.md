@@ -1,6 +1,6 @@
 # Life Science Data Analytics — SQL Project
 
-## About
+## About 
 
 A comprehensive SQL project combining **Healthcare Analytics with Genomics and Gene Variant Tracking** using **Snowflake**.
 
