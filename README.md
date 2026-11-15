@@ -75,8 +75,8 @@ The project covers **22 SQL and Snowflake topics**, progressing from fundamental
 | `01_database_setup.sql` | Tables and Data |
 | `02_aggregate_functions.sql` | COUNT, AVG, MAX, SUM, MIN |
 | `03_filtering.sql` | WHERE, AND, OR, IN, BETWEEN, LIKE |
-| `04_joins_basic.sql` | INNER, LEFT, RIGHT, FULL JOIN |
-| `05_joins_advanced.sql` | Multiple Joins, Self Joins, Advanced Join Queries |
+| `04_joins.sql` | INNER, LEFT, RIGHT, FULL JOIN |
+| `05_advanced_joins.sql` | Multiple Joins, Self Joins, Advanced Join Queries |
 | `06_group_by_having.sql` | GROUP BY, HAVING |
 | `07_subqueries.sql` | Scalar, Multi-row, Correlated Subqueries |
 | `08_cte.sql` | Common Table Expressions |
@@ -90,9 +90,9 @@ The project covers **22 SQL and Snowflake topics**, progressing from fundamental
 | `16_ctas.sql` | CREATE TABLE AS SELECT |
 | `17_indexing.sql` | Search Optimization Concepts |
 | `18_table_partitioning.sql` | Micro-Partitioning and Clustering |
-| `19__triggers.sql` | Trigger Concepts and Snowflake Alternatives |
+| `19_streams_tasks.sql` | Changes and Execution of that changes |
 | `20_stored_procedures_functions.sql` | Stored Procedures and Functions |
-| `21_gene_analysis.sql` | Gene Variant and Genomics Analysis |
+| `21_gene_variant_genomics_analysis.sql` | Gene Variant and Genomics Analysis |
 | `22_final_healthcare_analysis.sql` | End-to-End Healthcare Data Analysis |
 
 ---
@@ -173,8 +173,8 @@ Life Science Data Analytics — SQL Project
 ├── 01_database_setup.sql
 ├── 02_aggregate_functions.sql
 ├── 03_filtering.sql
-├── 04_joins_basic.sql
-├── 05_joins_advanced.sql
+├── 04_joins.sql
+├── 05_advanced_joins.sql
 ├── 06_group_by_having.sql
 ├── 07_subqueries.sql
 ├── 08_cte.sql
@@ -188,7 +188,7 @@ Life Science Data Analytics — SQL Project
 ├── 16_ctas.sql
 ├── 17_indexing.sql
 ├── 18_table_partitioning.sql
-├── 19_triggers.sql
+├── 19_streams_tasks.sql
 ├── 20_stored_procedures_functions.sql
-├── 21_gene_analysis.sql
+├── 21_gene_variant_genomics_analysis.sql
 └── 22_final_healthcare_analysis.sql
