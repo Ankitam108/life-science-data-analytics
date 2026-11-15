@@ -1,3 +1,5 @@
+-- Snowflake uses search optimization rather then conventional database indexes
+
 -- Q1. SEARCH OPTIMIZATION: Add search optimization to
 --     the patients table to improve searches on the
 --     patient name column.
