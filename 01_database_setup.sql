@@ -1,6 +1,7 @@
---DATABASE
+-- DATABASE
 CREATE DATABASE HEALTHCARE_ANALYTICS;
---SCHEMA
+
+-- SCHEMA
 CREATE SCHEMA RAW_DATA;
 
 -- TABLE 1: PATIENTS 
@@ -26,13 +27,13 @@ CREATE TABLE patients
   (8, 'meena thakur' , 36, 'female', 'O+', 'shimla', 'hypertension'),
   (9, 'karan singh', 36, 'male', 'AB+', 'mohali', 'COPD'),
   (10, 'pooja mehta', 27, 'female', 'O-', 'delhi', 'cancer'),
-  (11, 'vikas kumar', 48, 'male', 'B-', 'gurugram', 'ashthma'),
+  (11, 'vikas kumar', 48, 'male', 'B-', 'gurugram', 'asthma'),
   (12, 'simran kaur',  33, 'female', 'A-', 'amritsar', 'diabetes'),
   (13, 'manish verma', 39, 'male', 'O+', 'chandigarh', 'COPD'),
   (14, 'richa sharma', 31, 'female', 'AB-', 'mohali', 'hypertension'),
   (15, 'deepak rana', 55, 'male', 'B+', 'shimla', 'cancer');
 
---TABLE 2: DOCTORS
+-- TABLE 2: DOCTORS
 CREATE TABLE doctors 
 ( doctor_id INT PRIMARY KEY,
   name VARCHAR(100),
@@ -75,7 +76,7 @@ VALUES
 (7, 2, 3, '2026-03-15', 'Scheduled', 'Diabetes checkup'),
 (8, 6, 5, '2026-03-20', 'Scheduled', 'Asthma review');
 
---TABLE 4: LAB TESTS
+-- TABLE 4: LAB TESTS
 CREATE TABLE lab_tests 
 ( test_id INT PRIMARY KEY,
   patient_id INT,
@@ -96,7 +97,7 @@ VALUES
 (4, 4, 'Tumor Marker', '2026-02-16', 'Elevated', 'Normal', 'Done'),
 (5, 1, 'Lung Function', '2026-03-11', 'Reduced', 'Normal', 'Done');
 
---TABLE 5: MEDICINE
+-- TABLE 5: MEDICINE
 CREATE TABLE medicines 
 ( medicine_id INT PRIMARY KEY,
   name VARCHAR(100),
@@ -114,7 +115,7 @@ VALUES
 (4, 'Prednisolone', 'COPD', 60.00, 400, 'Abbott'),
 (5, 'Paclitaxel', 'Cancer', 5000.00, 50, 'Roche');
 
---TABLE 6: PRESCRIPTIONS
+-- TABLE 6: PRESCRIPTIONS
 CREATE TABLE prescriptions 
 ( prescription_id INT PRIMARY KEY,
   patient_id INT,
@@ -139,7 +140,7 @@ VALUES
 (4, 4, 4, 5, 'As directed', 90, '2026-02-15'),
 (5, 5, 5, 3, '2 times daily', 30, '2026-03-01');
 
---TABLE 7: GENE TESTS
+-- TABLE 7: GENE TESTS
 CREATE TABLE gene_tests 
 ( gene_test_id INT PRIMARY KEY,
   patient_id INT,
@@ -158,4 +159,4 @@ VALUES
 (2, 2, 'BRCA1', 'rs1799950', 'Chr17', '2026-02-25', 'No variant found'),
 (3, 4, 'TP53', 'Mutation', 'Chr17', '2026-03-15', 'Variant detected'),
 (4, 10, 'EGFR', 'Deletion', 'Chr7', '2026-03-20', 'Variant detected'),
-(5, 5, 'CFTR', 'rs75961395', 'Chr7', 2026-03-25', 'No variant found');
+(5, 5, 'CFTR', 'rs75961395', 'Chr7', '2026-03-25', 'No variant found');
