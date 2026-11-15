@@ -186,8 +186,8 @@ Life Science Data Analytics — SQL Project
 ├── 14_window_functions.sql
 ├── 15_views.sql
 ├── 16_ctas.sql
-├── 17_indexing.sql
-├── 18_table_partitioning.sql
+├── 17_search_optimization.sql
+├── 18_micro_partitioning_clustering.sql
 ├── 19_streams_tasks.sql
 ├── 20_stored_procedures_functions.sql
 ├── 21_gene_variant_genomics_analysis.sql
